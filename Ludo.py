@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[80]:
+# In[ ]:
 
 
 import random
 
+import game
 
 class Piece:
     out = False
@@ -186,12 +187,16 @@ def main():
     i = 0
     while i < 10:
         print(' ')
-        print("player 1 roll ")
-        games.play_game_player1()
-        print(' ')
-        print("player 2 roll ")
-        games.play_game_player2()
-        i = i + 1
+        inp=str(input('enter y to roll for player 1 '))
+        if inp=='y':
+            print("player 1 roll ")
+            games.play_game_player1()
+            print(' ')
+        inp=str(input('enter y to roll for player 2 '))
+        if inp=='y':
+            print("player 2 roll ")
+            games.play_game_player2()
+            i = i + 1
 
 
 if __name__ == "__main__":
