@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[ ]:
 
 
 import tkinter as tk
@@ -18,9 +18,9 @@ class Ludo(tk.Frame):
         self.redHome = []
         self.redGoal = 0
         
-        self.greenOnBoard = []
-        self.greenHome = []
-        self.greenGoal = 0
+#         self.greenOnBoard = []
+#         self.greenHome = []
+#         self.greenGoal = 0
         
         self.yellowOnBoard = []
         self.yellowHome = []
@@ -101,7 +101,7 @@ class Ludo(tk.Frame):
                        (0,7), (0,8), (1,8), (2,8), (3,8), (4,8), (5,8), (6,9), (6,10), (6,11), (6,12), (6,13), (6,14),
                        (7,14), (8,14), (8,13), (8,12), (8,11), (8,10), (8,9), (9,8), (10,8), (11,8), (12,8), (13,8), (14,8),
                        (14,7), (14,6), (13,6), (12,6), (11,6), (10,6), (9,6), (8,5), (8,4), (8,3), (8,2), (8,1), (8,0), (7,0)]
-        if self.die != 6 and len(self.redHome) == 4:
+        if self.die != 6 and len(self.redHome) == 2:
             self.die == 0
             self.color = self.teams.__next__()
         else:
@@ -161,7 +161,7 @@ class Ludo(tk.Frame):
                        (0,7), (0,8), (1,8), (2,8), (3,8), (4,8), (5,8), (6,9), (6,10), (6,11), (6,12), (6,13), (6,14),
                        (7,14), (8,14), (8,13), (8,12), (8,11), (8,10), (8,9), (9,8), (10,8), (11,8), (12,8), (13,8), (14,8),
                        (14,7), (14,6), (13,6), (12,6), (11,6), (10,6), (9,6), (8,5), (8,4), (8,3), (8,2), (8,1), (8,0), (7,0)]
-        if self.die != 6 and len(self.yellowHome) == 4:
+        if self.die != 6 and len(self.yellowHome) == 2:
             self.die == 0
             self.color = self.teams.__next__()
         else:
