@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
+# In[9]:
 
 
 import tkinter as tk
@@ -17,18 +17,11 @@ class Ludo(tk.Frame):
         self.redOnBoard = []
         self.redHome = []
         self.redGoal = 0
-        
-#         self.greenOnBoard = []
-#         self.greenHome = []
-#         self.greenGoal = 0
-        
+       
         self.yellowOnBoard = []
         self.yellowHome = []
         self.yellowGoal = 0
         
-        self.blueOnBoard = []
-        self.blueHome = []
-        self.blueGoal = 0
         
         self.teams = cycle(['red', 'yellow'])
         self.color = ''
@@ -152,7 +145,7 @@ class Ludo(tk.Frame):
                 self.color = self.teams.__next__()
 
     
-    #YELLOW MOVE
+    #YELLOW MOVE`
     def move_yellow(self, event):
         if self.yellowHome:
             nextColor = self.yellowHome[0]
