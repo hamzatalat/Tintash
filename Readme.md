@@ -1,6 +1,6 @@
-#Ludo game
+# Ludo game
 
-##Requirements
+## Requirements
 - Tkinter library
 - Random
 
